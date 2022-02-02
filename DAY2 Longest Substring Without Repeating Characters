@@ -72,3 +72,9 @@ int lengthOfLongestSubstring(string s) {
         return max;
     }
     ************
+    Success
+Runtime: 641 ms, faster than 8.60% of C++ online submissions for Longest Substring Without Repeating Characters.
+Memory Usage: 7.3 MB, less than 85.77% of C++ online submissions for Longest Substring Without Repeating Characters
+
+
+
