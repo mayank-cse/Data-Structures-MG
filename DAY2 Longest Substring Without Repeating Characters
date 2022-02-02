@@ -24,3 +24,51 @@ Constraints:
 
 0 <= s.length <= 5 * 104
 s consists of English letters, digits, symbols and spaces.
+************
+
+Naive Solution 
+
+int lengthOfLongestSubstring(string s) {
+        vector<int> vec;
+        
+        int max = 0, count = 0;
+        
+        if(s.length()==0){
+            return 0;
+        }
+        
+        for(int i=0;i<s.length();i++){
+            if(vec.empty()){
+                vec.push_back(s[i]);
+                continue;
+            }
+            int flag = 1;
+            int rep = 0;
+            for(auto j=vec.begin();j!=vec.end();++j){
+                if(*j==s[i]){
+                    flag=0;
+                }
+            }
+            if(flag==0){
+                count = vec.size();
+                vec.clear();
+                if(count>max){
+                    max=count;
+                }
+                i = i - count;
+                continue; 
+            }
+            else if(flag==1){
+                vec.push_back(s[i]);
+                continue;
+            }
+            
+            // i++;
+        }
+        count = vec.size();
+        if(count>max){
+            max=count;
+        }
+        return max;
+    }
+    ************
