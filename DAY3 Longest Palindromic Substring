@@ -38,3 +38,7 @@ string longestPalindrome(string s) {
         }
         return ans;
     }
+
+*************
+Runtime: 165 ms, faster than 51.41% of C++ online submissions for Longest Palindromic Substring.
+Memory Usage: 42.4 MB, less than 30.02% of C++ online submissions for Longest Palindromic Substring.
