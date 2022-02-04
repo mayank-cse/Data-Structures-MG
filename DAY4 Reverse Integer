@@ -1,1 +1,22 @@
+class Solution {
+public:
 
+int reverse(int x) {
+	//as in ans we might require storing a no. greater than INT_MAX and less than INT_min we take it as "LONG" which has greater range
+    long ans = 0;
+    while(x!=0){
+        int curr = x%10;
+        ans = ans*10 + curr;
+        x = x/10;
+		//As while reversing the no. can exceed the INT_MAX and INT_min values
+        if(ans>INT_MAX || ans<INT_MIN){
+            return 0;
+        }
+		//second way
+        // if((ans - curr)/10 !=prev) {return 0; break;}
+        // prev = ans;
+    }
+    
+    return ans;
+}
+};
