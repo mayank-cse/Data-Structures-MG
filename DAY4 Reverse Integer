@@ -51,4 +51,7 @@ int reverse(int x) {
 ******************
 Time complexity - O(n)
 space Complexity - O(n)
+******************
+100% fastest on Leetcode
+76.58% less space taken
 
