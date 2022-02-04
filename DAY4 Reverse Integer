@@ -47,3 +47,10 @@ int reverse(int x) {
     return ans;
 }
 };
+
+
+
+******************
+Time complexity - O(n)
+space Complexity - O(n)
+
