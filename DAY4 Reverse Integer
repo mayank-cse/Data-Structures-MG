@@ -22,7 +22,8 @@ Constraints:
 
 -231 <= x <= 231 - 1
 
-
+***************
+HINT_Take care of the INT_MAX and INT_MIN - edge case
 ***************
 class Solution {
 public:
