@@ -150,3 +150,10 @@ public:
         return ans*sign;
     }
 };
+
+Success
+
+https://leetcode.com/submissions/detail/634804367/
+
+Runtime: 3 ms, faster than 75.64% of C++ online submissions for String to Integer (atoi).
+Memory Usage: 7.1 MB, less than 13.19% of C++ online submissions for String to Integer (atoi).
