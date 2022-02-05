@@ -60,6 +60,8 @@ Since 4193 is in the range [-231, 231 - 1], the final result is 4193.
 
 ********************
 
+64 bit approach - using long
+
 class Solution {
 public:
     int myAtoi(string s) {
