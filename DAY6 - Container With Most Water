@@ -26,6 +26,7 @@ n == height.length
 2 <= n <= 105
 0 <= height[i] <= 104
 *****************************
+
 int maxArea(vector<int>& height) {
 //Declore the variables
         int i=0;
@@ -47,8 +48,9 @@ int maxArea(vector<int>& height) {
             k--;
         }
         return maxV;      //return the max
-    }imum
+    }
+    
 Success
-Details 
+
 Runtime: 97 ms, faster than 61.73% of C++ online submissions for Container With Most Water.
 Memory Usage: 58.9 MB, less than 98.52% of C++ online submissions for Container With Most Water.
