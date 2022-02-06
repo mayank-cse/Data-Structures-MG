@@ -25,7 +25,29 @@ Constraints:
 n == height.length
 2 <= n <= 105
 0 <= height[i] <= 104
-
+*****************************
+int maxArea(vector<int>& height) {
+//Declore the variables
+        int i=0;
+        int j=height.size()-1;
+        int k=height.size()-1;
+        int maxV=0;
+ //loop initialized till left pointer is less than right pointer
+        while(i<j){
+            int lh=height[i];
+            int rh=height[j];
+            int min_h=min(lh,rh);
+            maxV = max(maxV,min_h*(k));    //if the current volume is greater then store it in maxV 
+            if(lh<rh){    //if left pillar is smaller increment the left pointer i.e. i
+                i++;
+            }
+            else{         //if the right pointer is smaller decrement the right pointer
+                j--;
+            }
+            k--;
+        }
+        return maxV;      //return the max
+    }imum
 Success
 Details 
 Runtime: 97 ms, faster than 61.73% of C++ online submissions for Container With Most Water.
