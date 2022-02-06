@@ -50,8 +50,14 @@ int maxArea(vector<int>& height) {
         }
         return maxV;      //return the maximum area
     }
-    
+
+************************************
+
 Success
 
 Runtime: 97 ms, faster than 61.73% of C++ online submissions for Container With Most Water.
 Memory Usage: 58.9 MB, less than 98.52% of C++ online submissions for Container With Most Water.
+
+************************************
+
+https://leetcode.com/problems/container-with-most-water/discuss/1748856/EASY-or-C%2B%2B-or-O(N)-or-2-POINTER-APPROACH-or-COMMENTS-ADDED
