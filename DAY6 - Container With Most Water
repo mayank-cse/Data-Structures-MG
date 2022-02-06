@@ -25,6 +25,7 @@ Constraints:
 n == height.length
 2 <= n <= 105
 0 <= height[i] <= 104
+
 *****************************
 
 int maxArea(vector<int>& height) {
@@ -47,7 +48,7 @@ int maxArea(vector<int>& height) {
             }
             k--;
         }
-        return maxV;      //return the max
+        return maxV;      //return the maximum area
     }
     
 Success
