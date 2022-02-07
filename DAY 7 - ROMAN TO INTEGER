@@ -1,1 +1,5 @@
+Edge Case
+*consider adding the integer value of Roman Numbers
+*If the Roman number is succeeded with a greater number, subtract it's value from sum
+
 
