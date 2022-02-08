@@ -1,0 +1,8 @@
+#Day8  - Longest Common Prefix
+#100daysofcodechallenge #100DaysOfCode 
+Algo,
+*We take one element for the zeroth string
+*check if every string has that element
+*if everyone has it, we append it in "ans"
+*after doing for the lowest string size we return "ans"
+
