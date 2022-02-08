@@ -5,7 +5,7 @@ Algo,
 *check if every string has that element
 *if everyone has it, we append it in "ans"
 *after doing for the lowest string size we return "ans"
-
+******************************
 Write a function to find the longest common prefix string amongst an array of strings.
 
 If there is no common prefix, return an empty string "".
@@ -24,3 +24,4 @@ Constraints:
 1 <= strs.length <= 200
 0 <= strs[i].length <= 200
 strs[i] consists of only lower-case English letters.
+******************************
