@@ -59,7 +59,9 @@ public:
         return "";
         
     }
+    //recursive function 
     vector<string> memo(string digits,int i){
+            //Base Case
             if(i==digits.size()-1){
                 vector<string> ans;
                 for(char ch:integertostring(digits[i])){
@@ -69,9 +71,11 @@ public:
                 }
                 return ans;
             }
+            //iterating to the right most character digit
             vector<string> right=memo(digits,i+1);
             string str=integertostring(digits[i]);
             vector<string> ans;
+            //character of string obtained from "stringtointerger function traversed
             for(char ch:str){
                 for(string s:right){
                     string temp=ch+s;
