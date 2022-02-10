@@ -1,1 +1,9 @@
-
+#DAY10 - Letter Combination of phone number
+Algo, #100DaysOfCode #100daysofcodechallenge 
+*if no digit -> return {}
+*int to str func
+*recursive function(string digits, int i)
+ *base case if(i==digits.size()-1) return the ans
+ *else go to right most
+ *using 2 loops cross multiply
+*****************************************
