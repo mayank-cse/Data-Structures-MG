@@ -35,6 +35,7 @@ s consists of parentheses only '()[]{}'
 class Solution {
 public:
     bool isValid(string s) {
+       //Create a stack
         stack<char> stck;
         int n = s.length();
         for(int i=0;i<n;i++){
