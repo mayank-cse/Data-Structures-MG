@@ -1,1 +1,8 @@
 
+#Day11 - Valid Parentheses 🌋
+My college exams are going on but learning shud not stop, thus I solved an easy prob
+Algo,
+*take a stack
+*u see open bracket_push
+*close bracket check if stack.top matches with open bracket u want
+#100DaysOfCode #100daysofcodechallenge 
