@@ -34,20 +34,24 @@ s consists of parentheses only '()[]{}'
 **********************************
 class Solution {
 public:
-    bool isValid(string s) {
-       //Create a stack
+   ```
+ bool isValid(string s) {
+		 //create a stack
         stack<char> stck;
         int n = s.length();
         for(int i=0;i<n;i++){
             if(s[i]=='('||s[i]=='{'||s[i]=='['){
+				//if the bracket is open push it to the stack
                 stck.push(s[i]);
             }
             if(stck.empty()){
+				//if the stack is empty and u still find the closed bracket return false
                 if(s[i]==')'||s[i]=='}'||s[i]==']'){
                 return false;
                 }
             }
-            
+            //If you find a closed bracket check the top of the stack if it contains the corresponding opening bracket, 
+			//if not return false
             if(s[i]==')'){
                 if(stck.top()!='('){
                     return false;
@@ -68,9 +72,11 @@ public:
             }
             
         }
+		//if after completing the string traversal the stack is not empty_return false
         if(!stck.empty()){
             return false;
         }
         return true;
     }
+```
 };
