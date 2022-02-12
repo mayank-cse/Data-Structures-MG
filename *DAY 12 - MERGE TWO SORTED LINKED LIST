@@ -1,5 +1,4 @@
-* - means I'll come back to this problem
-
+['*' - means I'll come back to this problem]
 
 You are given the heads of two sorted linked lists list1 and list2.
 Merge the two lists in a one sorted list. The list should be made by splicing together the nodes of the first two lists.
@@ -70,6 +69,5 @@ public:
 };
 *************************************
 Success
-
 Runtime: 8 ms, faster than 75.74% of C++ online submissions for Merge Two Sorted Lists.
 Memory Usage: 14.8 MB, less than 45.13% of C++ online submissions for Merge Two Sorted Lists.
