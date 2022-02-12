@@ -69,3 +69,7 @@ public:
     }
 };
 *************************************
+Success
+
+Runtime: 8 ms, faster than 75.74% of C++ online submissions for Merge Two Sorted Lists.
+Memory Usage: 14.8 MB, less than 45.13% of C++ online submissions for Merge Two Sorted Lists.
