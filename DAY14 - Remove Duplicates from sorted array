@@ -1,1 +1,8 @@
-
+I AM BACK!
+Due to college exams I had to pause my #100daysofcodechallenge for few days
+but I have resumed the challenge from today with this simple problem
+algo
+*consider 3 pointers(i,j,k)
+*if([i]==[j])increment them without pushing
+*else put the unique value at k
+#100DaysOfCode
