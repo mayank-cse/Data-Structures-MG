@@ -69,3 +69,5 @@ public:
 Success
 Runtime: 8 ms, faster than 93.52% of C++ online submissions for Remove Duplicates from Sorted Array.
 Memory Usage: 18.3 MB, less than 74.98% of C++ online submissions for Remove Duplicates from Sorted Array.
+***********************************
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/discuss/1777668/Easy-or-94-Faster-or-Very-Easy-CPP-or-just-pointers-nothing-else
