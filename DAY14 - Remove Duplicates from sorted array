@@ -65,3 +65,7 @@ public:
         return k;
     }
 };
+***********************************
+Success
+Runtime: 8 ms, faster than 93.52% of C++ online submissions for Remove Duplicates from Sorted Array.
+Memory Usage: 18.3 MB, less than 74.98% of C++ online submissions for Remove Duplicates from Sorted Array.
