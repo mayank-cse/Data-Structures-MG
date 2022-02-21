@@ -1,1 +1,45 @@
+class Solution {
+public:
 
+int strStr(string haystack, string needle) {
+     int n = haystack.length();
+     int m = needle.length();
+     if(m==0){    //if str2 is empty
+         return 0;
+     }
+     if(m>n){    //if str2 is bigger than str1
+         return -1;
+     }
+     int k = 0;    //to traverse str2
+     int i = 0;    //to traverse str1
+     int flag = 0;    //to know if we have started traversing or we are in the middle of traversal of str2
+     int index = 0;   //stores the answer index
+ 	
+ 	//traverse the loop till i<n 
+     while(i<n){
+ 	//**VERY IMP **- compare the string if both of there character r equal **AND** also compare if it has the capacity by checking if the last elements are equal - this will help you optimize the solution otherwise the last test case won't pass
+         if(haystack[i]==needle[k] and i+m-1<n and haystack[i+m-1] == needle[m-1] and flag == 0 || haystack[i]==needle[k] and flag==1){
+             if(flag==0){
+                 index = i;
+             }
+             flag = 1;
+             i++;
+             k++;
+             if(k>=m){
+                 return index;
+             }
+             continue;
+         }
+     
+         if (haystack[i]!=needle[k] and flag==1){
+             k=0;
+             flag=0;
+             i = index+1;
+             index = 0;
+             continue;
+         }
+         i++;
+     }
+     return -1;
+ }
+};
