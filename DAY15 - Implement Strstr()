@@ -43,3 +43,8 @@ int strStr(string haystack, string needle) {
      return -1;
  }
 };
+
+************************************
+Success
+Runtime: 3 ms, faster than 98.33% of C++ online submissions for Implement strStr().
+Memory Usage: 7.1 MB, less than 67.17% of C++ online submissions for Implement strStr().
