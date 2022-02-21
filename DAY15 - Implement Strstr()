@@ -84,3 +84,7 @@ int strStr(string haystack, string needle) {
 Success
 Runtime: 3 ms, faster than 98.33% of C++ online submissions for Implement strStr().
 Memory Usage: 7.1 MB, less than 67.17% of C++ online submissions for Implement strStr().
+
+*
+************************************
+https://leetcode.com/problems/implement-strstr/discuss/1788178/98.33-FASTER-or-EASY-or-C%2B%2B-or-COMMENT-%2B-ALGO-ADDED
