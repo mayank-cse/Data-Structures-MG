@@ -22,6 +22,18 @@ Constraints:
 0 <= haystack.length, needle.length <= 5 * 104
 haystack and needle consist of only lower-case English characters.
 **********************************
+Edge Cases
+*if the str2 is bigger than str1 -> return -1
+*if str2 is NULL -> return 0
+
+Algo,
+*if the str2 is bigger than str1 -> return -1
+*if str2 is NULL -> return 0
+*traverse the str1 using while loop
+*point the index variable to the position where str1 and str2 starts matching
+*check if the complete string is present -> return index
+*else i=index+1, index=0,k=0 // come back the start position of str2.
+************************************
 class Solution {
 public:
 
