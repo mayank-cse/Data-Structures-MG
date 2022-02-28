@@ -1,1 +1,10 @@
+#Day17  Valid Sudoku 
+algo
+*we can use set as set does not allow duplicates
+*make string of the form -> "row/column/box+i/j/(i/3*3+j/3)+num"
+*thus by this we can check if the number already exists or not
+#100DaysOfCode #100daysofcodechallenge 
+https://leetcode.com/problems/valid-sudoku/submissions/…
+
+***********************
 
