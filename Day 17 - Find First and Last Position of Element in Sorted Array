@@ -32,11 +32,11 @@ public:
     }
     
     int binarySearch(vector<int>& nums, int target, bool flag) {
-        int l = 0, r = nums.size() - 1, mid, best = -1;
+        int l = 0, r = nums.size() - 1, mid, index = -1;
         while (l <= r) {
             mid = l + (r - l) / 2;
             if (nums[mid] == target) {
-                best = mid;
+                index = mid;
                 if (flag) {
                     r = mid - 1;
                 }
@@ -52,7 +52,7 @@ public:
             }
         }
         
-        return best;
+        return index;
     }
 };
 
