@@ -55,3 +55,8 @@ public:
         return best;
     }
 };
+
+****************************
+Success
+Runtime: 4 ms, faster than 96.48% of C++ online submissions for Find First and Last Position of Element in Sorted Array.
+Memory Usage: 13.5 MB, less than 98.49% of C++ online submissions for Find First and Last Position of Element in Sorted Array.
