@@ -60,3 +60,11 @@ public:
 Success
 Runtime: 4 ms, faster than 96.48% of C++ online submissions for Find First and Last Position of Element in Sorted Array.
 Memory Usage: 13.5 MB, less than 98.49% of C++ online submissions for Find First and Last Position of Element in Sorted Array.
+****************************
+#Day17 #100daysofcodechallenge  
+Find First and Last Position of Element in Sorted Array - LeetCode 
+ALGO,
+*as we have to do it in O(logn)-binary search
+*call binary search two times as fir we hve to find first and last index
+*store it in vector -> return
+https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/submissions/ 
