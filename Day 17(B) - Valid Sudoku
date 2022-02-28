@@ -31,3 +31,9 @@ public:
         return true;
     }
 };
+
+*****************************
+Success
+Details 
+Runtime: 41 ms, faster than 34.02% of C++ online submissions for Valid Sudoku.
+Memory Usage: 20 MB, less than 34.11% of C++ online submissions for Valid Sudoku.
