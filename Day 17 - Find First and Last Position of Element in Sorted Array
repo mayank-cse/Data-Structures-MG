@@ -65,4 +65,5 @@ ALGO,
 *as we have to do it in O(logn)-binary search
 *call binary search two times as fir we hve to find first and last index
 *store it in vector -> return
+
 https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/submissions/ 
