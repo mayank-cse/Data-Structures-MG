@@ -21,7 +21,6 @@ nums is a non-decreasing array.
 -109 <= target <= 109
 
 ******************************
-
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
@@ -55,7 +54,6 @@ public:
         return index;
     }
 };
-
 ****************************
 Success
 Runtime: 4 ms, faster than 96.48% of C++ online submissions for Find First and Last Position of Element in Sorted Array.
