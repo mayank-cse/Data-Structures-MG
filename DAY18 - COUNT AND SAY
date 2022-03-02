@@ -90,4 +90,8 @@ public:
         ans = ans + s[i-1];
         return ans;
     }
-};     
+};
+******************************
+Success
+Runtime: 115 ms, faster than 10.29% of C++ online submissions for Count and Say.
+Memory Usage: 161.3 MB, less than 6.79% of C++ online submissions for Count and Say.
