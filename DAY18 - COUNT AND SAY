@@ -71,24 +71,26 @@ public:
             return "11";
         }
         string s = countAndSay(n-1);
+        //After getting string from every function
         string ans = "";
-        int i = 1,count=1;
+        int i = 1,count=1; //initially frequency of every character is 1
         while(i<s.length()){
             if(s[i]==s[i-1]){
-                count++;
+                count++; //it will run till the new character is not coming , it will count the freq of that character
                 i++;
                 
             }
-            else{
-                ans = ans + to_string(count);
-                ans = ans + s[i-1];
-                count = 1;
+            else{ //when new character appeared - 
+                ans = ans + to_string(count); //first we store the freq of the old character
+                ans = ans + s[i-1];  // and then the character itself
+                count = 1;  // then we will set the freq 1
                 i++;
             }
         }
+         // for length=1 it will run example- "1"
         ans = ans + to_string(count);
         ans = ans + s[i-1];
-        return ans;
+        return ans; // then we return the final string to all function from recursion tail
     }
 };
 ******************************
