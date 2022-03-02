@@ -1,1 +1,10 @@
+ #DAY18 Count and Say🌋
+#100DaysOfCode #100daysofcodechallenge 
+Algo,
+*recursion
+*Base Case, n==1 -> return "1"
+*recursion call -> C&S(n-1)
+*count frequency of the char -> append the count to ans -> append the char ((till u traverse every char of string)
+
+https://leetcode.com/problems/count-and-say/submissions/ 
 
