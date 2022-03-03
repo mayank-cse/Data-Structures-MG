@@ -1,1 +1,8 @@
-
+#Day19 3Sum Closest🌋
+#100DaysOfCode #100daysofcodechallenge 
+ALGO,
+*Similar to 3 sum approach 
+*first consider value of first index to be constant
+*apply 2 pointer approach
+*to find the closest index store the absolute difference and compare it
+https://leetcode.com/problems/3sum-closest/submissions/ 
