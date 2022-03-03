@@ -25,3 +25,56 @@ Constraints:
 -1000 <= nums[i] <= 1000
 -104 <= target <= 104
 ***************************
+class Solution {
+public:
+    int threeSumClosest(vector<int>& nums, int target) {
+        sort(nums.begin(), nums.end());
+        int i = 0; 
+        int j, k;
+        int n = nums.size();
+        int ans = 0;
+        int ans_Diff = 9999;
+        while(i<n-2){
+            // consider the first digit to be constant and subtract it from the target
+            int x = target - nums[i];
+            //Now we'll follow two pointer approach to check if we have any two numbers in the given vector which sums to x
+            int l = i+1, r = n-1;
+            while(l<r){
+                int sum = nums[i];
+                //if equal to x -> return target as it itself is the closest sum
+                if(nums[l]+nums[r]==x){
+                    return target;
+                }
+                //if less -> increment left pointer and compare and check the diff
+                
+                else if(nums[l]+nums[r]<x){
+                    sum = sum+nums[l]+nums[r];
+                    int temp =abs(target - sum);
+                    //if diff is less -> store it
+                    if(temp<ans_Diff){
+                        ans_Diff=temp;
+                        ans = sum;
+                    }
+                    l++;
+                    continue;
+                }
+                //if more -> decrement right pointer and compare and check the diff
+
+                else if(nums[l]+nums[r]>x){
+                    sum = sum+nums[l]+nums[r];
+                    int temp = abs(sum - target);
+                    //if diff is less -> store it
+                    if(temp<ans_Diff){
+                        ans_Diff=temp;
+                        ans = sum;
+                    }
+                    r--;
+                }
+            }
+            //increment the 3rd number
+            i++;
+        }
+        //return the final sum
+        return ans;
+    }
+};
