@@ -78,3 +78,7 @@ public:
         return ans;
     }
 };
+******************************
+Success
+Runtime: 16 ms, faster than 64.42% of C++ online submissions for 3Sum Closest.
+Memory Usage: 10.1 MB, less than 20.62% of C++ online submissions for 3Sum Closest.
