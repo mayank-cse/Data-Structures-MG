@@ -1,1 +1,8 @@
-
+#DAY20 - Integer to Roman🤔
+#100DaysOfCode #100daysofcodechallenge 
+It was an amazing question, twisted my mind a lot
+Algo,
+**Check constraints of the question, no is not gonna be bigger than 3k
+*Recursion
+*If num>1000 -> call helper, nums-100 and ans + "M";
+Do same with others😏
