@@ -6,3 +6,59 @@ Algo,
 *Recursion
 *If num>1000 -> call helper, nums-100 and ans + "M";
 Do same with others😏
+***************************
+class Solution {
+public:
+    string helper(int nums, string ans){
+        if(nums==0){
+            return ans;
+        }
+        if(nums>=1000){
+            // ans = ans + "M";
+            return helper(nums-1000, ans+"M");
+        }
+        else if(nums>=900){
+            return helper(nums-900, ans+"CM");
+        }
+        else if(nums>=500){
+            return helper(nums-500, ans+"D");
+        }
+        else if(nums>=400){
+            return helper(nums-400, ans+"CD");
+        }
+        else if(nums>=100){
+            return helper(nums-100, ans+"C");
+        }
+        else if(nums>=90){
+            return helper(nums-90, ans+"XC");
+        }
+        else if(nums>=50){
+            return helper(nums-50, ans+"L");
+        }
+        else if(nums>=40){
+            return helper(nums-40, ans+"XL");
+        }
+        else if(nums>=10){
+            return helper(nums-10, ans+"X");
+        }
+        else if(nums>=9){
+            return helper(nums-9, ans+"IX");
+        }
+        else if(nums>=5){
+            return helper(nums-5, ans+"V");
+        }
+        else if(nums>=4){
+            return helper(nums-4, ans+"IV");
+        }
+        else if(nums>=1){
+            return helper(nums-1, ans+"I");
+        }
+        return ans;
+        
+    }
+    string intToRoman(int num) {
+        string ans = "";
+        ans = helper(num, ans);
+        return ans;
+    }
+};
