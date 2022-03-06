@@ -48,14 +48,19 @@ Constraints:
 
 class Solution {
 public:
-    string helper(int nums, string ans){
+
+//create a helper function so that we can call it recursively
+string helper(int nums, string ans){
+	//Base Case - if nums equals to zero -> return the final ans
         if(nums==0){
             return ans;
         }
+		//if greater than 1000 -> Add respective String
         if(nums>=1000){
             // ans = ans + "M";
             return helper(nums-1000, ans+"M");
         }
+		//if greater than 900 -> Add respective String
         else if(nums>=900){
             return helper(nums-900, ans+"CM");
         }
@@ -96,10 +101,14 @@ public:
         
     }
     string intToRoman(int num) {
+	//Create string to store ans value
         string ans = "";
+		//Call recursion
         ans = helper(num, ans);
+		//Return ans
         return ans;
     }
+
 };
 *******************************
 Success
