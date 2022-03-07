@@ -27,25 +27,31 @@ Constraints:
 ********************************
 class Solution {
 public:
+//make sure you are using "&" reference symbol before vector
     void solve(vector<string>& ans, string output, int open, int close){
+	//Base Case - if open and close == 0, output has a leaf node -> push it to ans vector
         if(open==0 and close==0){
             ans.push_back(output);
             // return;
         }
+	//if open is not equal to zero first we'll call open parentheses
         if(open>0){
             solve(ans, output+ "(", open-1, close);
         }
+	//then we'll recursively start calling close brackets in combination
         if(close>open){
             solve(ans, output+ ")", open, close-1);
         }
-
         // return;
-        
     }
     vector<string> generateParenthesis(int n) {
+	//"ans" vector to store the parentheses
         vector<string> ans;
+	// close and open will keep the record of the brackets used
         int close = n, open = n;
+	//output will store the current string
         string output = "";
+	//recursion called
         solve(ans, output, open, close);
         return ans;
     }
