@@ -1,1 +1,9 @@
-
+I am in LOVE🥰...with recursion 
+#DAY21 - Generate Parentheses
+#100daysofcodechallenge #100DaysOfCode 
+Algo,
+*Base Case -> if open and close = 0, push output to answer
+*Call recursion with conditions 
+**call close bracket only when close>open -> Balanced
+https://leetcode.com/problems/generate-parentheses/submissions/ 
+*******************************
