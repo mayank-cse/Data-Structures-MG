@@ -24,4 +24,29 @@ Output: ["()"]
 Constraints:
 
 1 <= n <= 8
-******************************
+********************************
+class Solution {
+public:
+    void solve(vector<string>& ans, string output, int open, int close){
+        if(open==0 and close==0){
+            ans.push_back(output);
+            // return;
+        }
+        if(open>0){
+            solve(ans, output+ "(", open-1, close);
+        }
+        if(close>open){
+            solve(ans, output+ ")", open, close-1);
+        }
+
+        // return;
+        
+    }
+    vector<string> generateParenthesis(int n) {
+        vector<string> ans;
+        int close = n, open = n;
+        string output = "";
+        solve(ans, output, open, close);
+        return ans;
+    }
+};
