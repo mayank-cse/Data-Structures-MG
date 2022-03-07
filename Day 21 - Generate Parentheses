@@ -51,3 +51,7 @@ public:
         return ans;
     }
 };
+***********************************
+Success
+Runtime: 0 ms, faster than 100.00% of C++ online submissions for Generate Parentheses.
+Memory Usage: 13.8 MB, less than 47.66% of C++ online submissions for Generate Parentheses.
