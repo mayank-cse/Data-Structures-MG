@@ -63,3 +63,7 @@ public:
         return head;
     }
 };
+*********************************
+Success
+Runtime: 3 ms, faster than 88.99% of C++ online submissions for Remove Nth Node From End of List.
+Memory Usage: 10.7 MB, less than 33.57% of C++ online submissions for Remove Nth Node From End of List.
