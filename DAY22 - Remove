@@ -1,1 +1,8 @@
-
+#DAY22 - Remove Nth Node From End of List😶‍🌫️
+#100DaysOfCode #100daysofcodechallenge 
+Algo,
+*I have simply counted the no of nodes, count
+*then traversed temp till, count-n
+*if count-n ==0 return head->next
+*if(temp->next->next==NULL) -> temp=NULL
+https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/
