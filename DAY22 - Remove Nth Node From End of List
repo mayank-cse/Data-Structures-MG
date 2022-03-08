@@ -6,3 +6,4 @@ Algo,
 *if count-n ==0 return head->next
 *if(temp->next->next==NULL) -> temp=NULL
 https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/
+**************************************
