@@ -1,3 +1,13 @@
+#Day23 - Permutations - LeetCode
+#100DaysOfCode #100daysofcodechallenge 
+Algo,
+*RECURSION & SWAPPING
+*Base Case - If you traverse all -> return ans;
+*for loop to traverse every index
+*swap the index with every other index
+ans it's done
+TC - O(n!)
+************************************
 Given an array nums of distinct integers, return all the possible permutations. You can return the answer in any order.
 
 Example 1:
