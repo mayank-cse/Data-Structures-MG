@@ -38,3 +38,6 @@ public:
     }
 };
 ***********************************
+Success
+Runtime: 4 ms, faster than 68.76% of C++ online submissions for Permutations.
+Memory Usage: 8 MB, less than 39.61% of C++ online submissions for Permutations.
