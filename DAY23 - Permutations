@@ -37,6 +37,7 @@ public:
         return ans;
     }
 };
+Time Complexity - O(n!)
 ***********************************
 Success
 Runtime: 4 ms, faster than 68.76% of C++ online submissions for Permutations.
