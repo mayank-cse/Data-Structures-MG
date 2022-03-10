@@ -25,6 +25,8 @@ n == matrix.length == matrix[i].length
 -1000 <= matrix[i][j] <= 1000
 *********************************
 Brute force - creating a new matrix and one by one shifting row and column in correct position.
+TC - O(n^2) //for selection and insertion
+SC - O(n^2) //As new matrix(n x n) created
 *********************************
 class Solution {
 public:
@@ -50,6 +52,9 @@ public:
         }
     }
 };
+
+TC - O(n^2) (swapping) + O(n^2) (reversing)
+SC - O(1)
 **************************************
 Success
 Runtime: 0 ms, faster than 100.00% of C++ online submissions for Rotate Image.
