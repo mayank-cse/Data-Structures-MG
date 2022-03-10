@@ -1,1 +1,10 @@
-
+#Day24 - Rotate Image/Matrix🤠
+#100DaysOfCode #100daysofcodechallenge 
+Algo,
+*we can create a swap and reverse function
+*first we'll transpose the matrix by swapping the positions (i and j)
+*then reverse each row to get the desired output
+*TC-O(n^2)
+*SC-1
+https://leetcode.com/problems/rotate-image/submissions/ 
+************************************
