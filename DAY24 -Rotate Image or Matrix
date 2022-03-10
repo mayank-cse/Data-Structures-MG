@@ -50,3 +50,7 @@ public:
         }
     }
 };
+**************************************
+Success
+Runtime: 0 ms, faster than 100.00% of C++ online submissions for Rotate Image.
+Memory Usage: 7.2 MB, less than 34.01% of C++ online submissions for Rotate Image.
