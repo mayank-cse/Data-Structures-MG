@@ -24,6 +24,8 @@ n == matrix.length == matrix[i].length
 1 <= n <= 20
 -1000 <= matrix[i][j] <= 1000
 *********************************
+Brute force - creating a new matrix and one by one shifting row and column in correct position.
+*********************************
 class Solution {
 public:
     void swap(int &x, int &y){
