@@ -28,12 +28,15 @@ Brute force - creating a new matrix and one by one shifting row and column in co
 *********************************
 class Solution {
 public:
+    //create a swap and reverse function
     void swap(int &x, int &y){
         int temp = x;
         x = y;
         y = temp;
     }
+ 
     void rotate(vector<vector<int>>& matrix) {
+    //we'll transpose the matrix by swapping the positions (i and j)
         int n = matrix.size();
         for(int i = 0;i<n;i++){
             for(int j=0;j<i;j++){
@@ -41,7 +44,7 @@ public:
             }
         }
         
-        //Reverse rows
+        //reverse each row to get the desired output
         for(int i = 0;i<n;i++){
             reverse(matrix[i].begin(), matrix[i].end());
         }
