@@ -71,3 +71,6 @@ Algo,
 *return dp[i][j]=helper(i+1,j)+helper(i,j+1);
 vector<vector<int>> dp(m, vector<int>(n,-1));
 **********************************
+Success
+Runtime: 0 ms, faster than 100.00% of C++ online submissions for Unique Paths.
+Memory Usage: 6.6 MB, less than 26.49% of C++ online submissions for Unique Paths.
