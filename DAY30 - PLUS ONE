@@ -1,3 +1,23 @@
+class Solution {
+public:
+    vector<int> plusOne(vector<int>& digits) {
+        int n=digits.size();
+        int i=n-1;
+        while(digits[i]==9){
+            digits[i]=0;
+            if(i==0){
+                vector<int> newNum(n+1);
+                newNum[0]=1;
+                return newNum;
+            }
+            i--;
+        }
+        
+        digits[i]++;
+        return digits;
+    }
+};
+********************************************************************
 #Day30 - Plus One🪂😄
 #100DaysOfCode #100daysofcodechallenge 
 Algo,
