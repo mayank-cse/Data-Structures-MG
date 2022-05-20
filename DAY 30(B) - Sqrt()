@@ -1,1 +1,12 @@
 
+#Day30 - Sqrt(x)
+#100daysofcodechallenge 
+Algo,
+*while loop till the square of 'i' becomes greater or equal to x
+OR
+*for loop till x/2+1;
+*if equal -> return i;
+*if greater -> return i-1;
+
+T.C. = O(logn)
+https://leetcode.com/problems/sqrtx/submissions/ 
