@@ -57,3 +57,8 @@ OR
 
 T.C. = O(logn)
 https://leetcode.com/problems/sqrtx/submissions/ 
+**********************************************
+Success
+Details 
+Runtime: 20 ms, faster than 15.14% of C++ online submissions for Sqrt(x).
+Memory Usage: 5.9 MB, less than 74.75% of C++ online submissions for Sqrt(x).
