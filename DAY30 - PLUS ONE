@@ -1,1 +1,8 @@
-
+#Day30 - Plus One🪂😄
+#100DaysOfCode #100daysofcodechallenge 
+Algo,
+*loop from the last till Digit[i]!=9
+*Digit[i]++
+*only edge case to handle is when all are 9
+*in case of all 9, make new vector with size + 1 and place '1' in zeroth position and rest '0'
+https://leetcode.com/problems/plus-one/submissions/…
