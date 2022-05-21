@@ -20,6 +20,33 @@ Constraints:
 
 1 <= n <= 45
 *************************************************
+class Solution {
+public:
+    int helper(int n,int i, vector<int> &dp){
+        if(i==n){
+            return 1;
+        }
+        if(i>n){
+            return 0;
+        }
+        if(dp[i]!=-1){
+            return dp[i];
+        }
+        dp[i] = helper(n, i+1, dp)+helper(n,i+2, dp);
+        return dp[i];
+        
+    }
+    int climbStairs(int n) {
+        if(n==1){
+            return 1;
+        }
+        if(n==2){
+            return 2;
+        }
+        vector<int> dp(n,-1);
+        return helper(n,0, dp);
+    }
+};
 #Day31 - Climbing Stairs
 #100DaysOfCode #100daysofcodechallenge 
 Algo,
