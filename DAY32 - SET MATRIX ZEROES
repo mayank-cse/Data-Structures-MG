@@ -62,4 +62,7 @@ public:
     }
 };
 //T.C. - O(n^3)
+Success
+Runtime: 25 ms, faster than 24.45% of C++ online submissions for Set Matrix Zeroes.
+Memory Usage: 13.7 MB, less than 11.25% of C++ online submissions for Set Matrix Zeroes.
 *******************************************
