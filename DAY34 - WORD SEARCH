@@ -96,3 +96,7 @@ public:
         return false;
     }
 };
+************************************************************
+Success
+Runtime: 1068 ms, faster than 9.88% of C++ online submissions for Word Search.
+Memory Usage: 8.3 MB, less than 7.65% of C++ online submissions for Word Search.
