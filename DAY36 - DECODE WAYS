@@ -38,7 +38,34 @@ Constraints:
 1 <= s.length <= 100
 s contains only digits and may contain leading zero(s).
 *****************************************************************
-
+class Solution {
+public:
+    int dp[101];
+    int helper(int i, string &s){
+        if(i >= s.size()){
+            return 1;
+        }
+        if(dp[i]!=-1){
+            return dp[i];
+        }
+        int ans = 0;
+        int opt1 = s[i]-'0';
+        int opt2=0;
+        if(i<s.size()-1){
+            opt2 = opt1*10 + (s[i+1]-'0');
+        }
+        if(opt1>0){ans += helper(i+1, s);}
+        if(opt1>0 and opt2>0 and opt2<26){
+            ans += helper(i+2, s);   
+        }
+        return dp[i]=ans;
+    }
+    int numDecodings(string s) {
+        memset(dp,-1,sizeof dp);
+        return helper(0,s);
+    }
+};
+***********************************************************
 class Solution {
 public:
     int numDecodings(string s) {
