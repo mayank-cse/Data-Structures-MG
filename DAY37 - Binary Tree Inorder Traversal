@@ -44,3 +44,7 @@ vector<int>r;
         
     }
 };
+*****************************************************************
+Success
+Runtime: 3 ms, faster than 56.29% of C++ online submissions for Binary Tree Inorder Traversal.
+Memory Usage: 10.3 MB, less than 6.94% of C++ online submissions for Binary Tree Inorder Traversal.
