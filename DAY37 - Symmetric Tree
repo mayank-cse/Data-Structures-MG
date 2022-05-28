@@ -40,3 +40,7 @@ public:
      return check(root,root);  
     }
 };
+***********************************************************
+Success 
+Runtime: 15 ms, faster than 11.70% of C++ online submissions for Symmetric Tree.
+Memory Usage: 16.5 MB, less than 49.37% of C++ online submissions for Symmetric Tree.
