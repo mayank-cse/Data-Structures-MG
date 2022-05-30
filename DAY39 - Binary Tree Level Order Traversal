@@ -66,3 +66,6 @@ public:
     }
 };
 **************************************************************
+Success
+Runtime: 0 ms, faster than 100.00% of C++ online submissions for Binary Tree Level Order Traversal.
+Memory Usage: 12.5 MB, less than 61.99% of C++ online submissions for Binary Tree Level Order Traversal.
