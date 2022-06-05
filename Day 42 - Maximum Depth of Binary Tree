@@ -40,7 +40,6 @@ public:
 };
 
 *****************************************************
-
 Success
 Runtime: 7 ms, faster than 90.25% of C++ online submissions for Maximum Depth of Binary Tree.
 Memory Usage: 19 MB, less than 14.57% of C++ online submissions for Maximum Depth of Binary Tree.
