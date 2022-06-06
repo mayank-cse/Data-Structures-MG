@@ -51,3 +51,6 @@ public:
     }
 };
 ******************************************************* 
+Success
+Runtime: 11 ms, faster than 94.20% of C++ online submissions for Convert Sorted Array to Binary Search Tree.
+Memory Usage: 21.4 MB, less than 42.86% of C++ online submissions for Convert Sorted Array to Binary Search Tree.
