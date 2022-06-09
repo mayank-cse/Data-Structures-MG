@@ -43,3 +43,7 @@ public:
         return ans;
     }
 };
+*********************************************************
+Success 
+Runtime: 4 ms, faster than 24.61% of C++ online submissions for Pascal's Triangle.
+Memory Usage: 6.6 MB, less than 33.01% of C++ online submissions for Pascal's Triangle.
