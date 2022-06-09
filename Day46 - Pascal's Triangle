@@ -14,3 +14,32 @@ Constraints:
 Accepted - 821,750
 Submissions - 1,257,766
 ************************************************
+//Brute Force Method
+class Solution {
+public:
+    vector<vector<int>> generate(int numRows) {
+        vector<vector<int>> ans;
+        if(numRows == 0){
+            return ans;
+        }
+        
+        vector<int> root{1};
+        ans.push_back(root);
+        
+        int n = 1;
+        //Brute Force
+        while(n!=numRows){
+            vector<int> temp;
+            temp.push_back(1);
+            if(n>1){
+                for(int i = 0; i<n-1;i++){
+                    temp.push_back(ans[n-1][i] + ans[n-1][i+1]);
+                }
+            }
+            temp.push_back(1);
+            ans.push_back(temp);
+            n++;
+        }
+        return ans;
+    }
+};
