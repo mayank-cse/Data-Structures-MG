@@ -19,3 +19,73 @@ Constraints:
 Accepted - 2,246,091
 Submissions - 4,144,390
 **********************************************************
+class Solution {
+/*
+approaches
+ First; Brute force method
+ Second; Two pointer approach
+ I think we'll have to store max values with the start and end in map 
+ */
+public:
+    //BRUTE FORCE
+    // int maxProfit(vector<int>& prices) {
+    //     int end = prices.size();
+    //     int maxProfit = 0; // as profit can not be negative
+    //     int start = 0;
+    //     //7,1,5,3,6,4
+    //     for(int i = start; i<end;i++){//7 to 4
+    //         for(int j = i+1; j<end;j++){//1 to 4
+    //             int profit = (prices[j]-prices[i]);
+    //             if(profit>maxProfit){//compares all the profit to maxProfit
+    //                 maxProfit = profit;
+    //             }
+    //         }
+    //     }
+    //     return maxProfit;
+    // }
+    
+//     int maxProfit(vector<int>& prices){
+        
+//         int start = 0;
+//         int end = prices.size();
+//         int maxProfit = 0;
+//         int pointer1 = start;
+//         while(pointer1<end-1){
+//             int profit = *max_element(prices.begin()+pointer1+1, prices.end());
+//             // cout<<profit<<pointer1<<endl;
+//             if((profit-prices[pointer1])>maxProfit){
+//                 maxProfit = (profit-prices[pointer1]);
+//                 // cout<<maxProfit;
+//             }
+//             pointer1++;
+//         }
+//         return maxProfit;
+//     }
+    //Optimized Approach
+    int maxProfit(vector<int>& prices){
+        //7 , 1, 5, 3, 6, 4
+        //7 -> min =7, maxProfit = 0
+        //1 -> min = 1, maxProfit = 0
+        //5 -> min = 1, maxProfit = 4
+        //6-> min=1, maxProfit = 5
+        int start = 1; 
+        int end = prices.size();
+        int minimumPrice = prices[0];
+        int maxProfit = 0; //As the profit can not be negative
+        while(start<end){
+            if(prices[start]<minimumPrice){
+                minimumPrice = prices[start];
+                start++;
+                continue;
+            }
+            int profit = (prices[start] - minimumPrice);
+            // cout<<profit<<endl;
+            if(profit>maxProfit){
+                maxProfit=profit;
+            }
+            start++;
+        }
+        return maxProfit;
+        
+    } 
+};
