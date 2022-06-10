@@ -89,3 +89,7 @@ public:
         
     } 
 };
+*********************************************************
+Success
+Runtime: 139 ms, faster than 88.67% of C++ online submissions for Best Time to Buy and Sell Stock.
+Memory Usage: 93.2 MB, less than 99.18% of C++ online submissions for Best Time to Buy and Sell Stock.
