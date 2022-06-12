@@ -24,3 +24,18 @@ Follow up: Could you solve it without converting the integer to a string?
 Accepted - 2,152,194
 Submissions - 4,098,155
 ****************************************************************
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        string check1 = to_string(x);
+      
+        string check2 = check1;
+        reverse(check1.begin(), check1.end());
+        if(check1 == check2){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+};
