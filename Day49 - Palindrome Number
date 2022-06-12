@@ -39,3 +39,7 @@ public:
         }
     }
 };
+Success
+Runtime: 15 ms, faster than 75.26% of C++ online submissions for Palindrome Number.
+Memory Usage: 6 MB, less than 12.04% of C++ online submissions for Palindrome Number.
+******************************************************************
