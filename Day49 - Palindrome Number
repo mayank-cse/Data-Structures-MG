@@ -43,3 +43,34 @@ Success
 Runtime: 15 ms, faster than 75.26% of C++ online submissions for Palindrome Number.
 Memory Usage: 6 MB, less than 12.04% of C++ online submissions for Palindrome Number.
 ******************************************************************
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        int num = x;
+        int rev = 0;
+        int i = 0;
+        if(x==0){
+            return true;
+        }
+        if(x < 0 || x%10 == 0){
+            return false;
+        }
+        while (num>rev){
+            int digit = num%10;
+            rev  = (rev*10) + digit;
+            num = num/10;
+            cout<<digit<<" "<<rev<<" "<<num<<endl;
+        }
+        // if(num = rev){
+        //     return true;
+        // }
+        
+        return ((num==rev)||(num==rev/10));
+        
+    }
+};
+Success
+Runtime: 222 ms, faster than 5.38% of C++ online submissions for Palindrome Number.
+Memory Usage: 5.8 MB, less than 74.38% of C++ online submissions for Palindrome Number.
+*************************************************************************
+
