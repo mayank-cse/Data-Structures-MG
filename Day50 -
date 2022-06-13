@@ -18,3 +18,65 @@ The number of nodes in the list is in the range [0, 100].
 Accepted - 889,104
 Submissions - 1,504,376
 *********************************************************************
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+//     ListNode* swapPairs(ListNode* head) {
+//         ListNode* root = head;
+//         ListNode* nxt = root->next;
+//         ListNode* ans = root->next;
+//         ListNode* prv;
+//         if(root == NULL){
+//             return NULL;
+//         }
+//         if(nxt == NULL){
+//             return head;
+//         }
+//         while(nxt->next != NULL and nxt->next->next!=NULL){
+//             root->next = nxt->next;
+//             nxt->next = root;
+//             prv = root;
+//             root = root->next;
+//             nxt = root->next;
+//         }
+//         if(root!=NULL and nxt != NULL){
+//             prv->next = nxt;
+//             root->next = NULL;
+//             nxt->next = root;
+//         }
+        
+       
+        
+//         return ans;
+//     }
+    ListNode* swapPairs(ListNode* head) {
+        if(!head || !head->next) return head;
+        ListNode* p = head;
+        ListNode* q = head->next;
+        ListNode* previous = p;
+        p->next = q->next;
+        q->next = p;
+        p = p->next;
+        head = q;
+        ListNode* temp;
+        while(p && p->next){
+            temp = p;
+            p = p->next->next;
+            q = temp->next;
+            q->next = temp;
+            temp->next = p;
+            previous->next = q;
+            previous = temp; 
+        }
+        return head;
+    }
+};
