@@ -15,7 +15,6 @@ Output: [1]
 Constraints:
 The number of nodes in the list is in the range [0, 100].
 0 <= Node.val <= 100
-Accepted
-889,104
-Submissions
-1,504,376
+Accepted - 889,104
+Submissions - 1,504,376
+*********************************************************************
