@@ -23,3 +23,29 @@ s consists only of printable ASCII characters.
 Accepted - 1,326,001
 Submissions - 3,147,615
 **********************************************************************************
+//Brute Force Method
+class Solution {
+public:
+    bool isPalindrome(string s) {
+        int k = 0;
+        // int n = 0;
+        for(int i = 0; i< s.length();i++){
+            int lowChar = tolower(s[i]);
+            if((lowChar-'a'<26 and lowChar-'a'>=0)||(lowChar-'0'>=0 and lowChar-'0'<=9)){
+                s[k] = tolower(s[i]);
+                k++;
+                // cout<<s[k]<<endl;
+            }
+        }
+        for(int i = 0;i<k;i++){
+            cout<<s[i];
+        }
+        s = s.substr(0,k);
+        string str1 = s;
+        reverse(s.begin(),s.end());
+        if(s==str1){
+            return true;
+        }
+        return false;
+    }
+};
