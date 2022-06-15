@@ -32,10 +32,10 @@ public:
     }
     
     return ans;
-}
+}    
+};
+
 **************************************************************************
 Success
 Runtime: 25 ms, faster than 66.42% of C++ online submissions for Single Number.
 Memory Usage: 17 MB, less than 52.80% of C++ online submissions for Single Number.
-    
-};
