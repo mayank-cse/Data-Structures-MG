@@ -20,3 +20,18 @@ Each element in the array appears twice except for one element which appears onl
 Accepted - 1,686,531
 Submissions - 2,424,851
 **************************************************************************
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        
+
+    int ans=0;
+    for(int i=0;i<nums.size();i++)
+    {
+        ans=ans^nums[i];
+    }
+    
+    return ans;
+}
+    
+};
