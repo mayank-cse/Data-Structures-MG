@@ -50,3 +50,7 @@ public:
         return false;
     }
 };
+****************************************************************
+Success
+Runtime: 7 ms, faster than 97.17% of C++ online submissions for Linked List Cycle.
+Memory Usage: 7.9 MB, less than 95.84% of C++ online submissions for Linked List Cycle.
