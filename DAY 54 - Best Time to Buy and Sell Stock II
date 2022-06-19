@@ -26,6 +26,8 @@ Constraints:
 Accepted - 1,175,998
 Submissions - 1,886,121
 ***********************************************************
+Method - 1 -> Recursion
+Method - 2 -> Dp
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
