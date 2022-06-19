@@ -26,3 +26,25 @@ Constraints:
 Accepted - 1,175,998
 Submissions - 1,886,121
 ***********************************************************
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int maxProfit = 0;
+        int i = 0; 
+        int j = i+1;
+        int start = 0;
+        //7(i) 1(j) 5 3 6 4
+        while(j<prices.size()){
+            cout<<prices[i]<<prices[j-1]<<prices[j]<<maxProfit<<endl;
+            if(prices[j]>=prices[j-1]){
+                j++;
+                continue;
+            }
+            maxProfit += prices[j-1]-prices[i];
+            i = j;
+            j++;
+        }
+        maxProfit += prices[j-1]-prices[i];
+        return maxProfit;
+    }
+};
