@@ -54,7 +54,10 @@ public:
         return maxCount;
     }
 };
-**********************
+Success
+Runtime: 246 ms, faster than 51.88% of C++ online submissions for Longest Consecutive Sequence.
+Memory Usage: 33.8 MB, less than 70.16% of C++ online submissions for Longest Consecutive Sequence.
+*******************************************************************
 class Solution {
 public:
     int helper(unordered_set<int>& ss, int key){
@@ -83,7 +86,7 @@ public:
         return maxCount;
     }
 };
-**************************************************************
 Success
-Runtime: 246 ms, faster than 51.88% of C++ online submissions for Longest Consecutive Sequence.
-Memory Usage: 33.8 MB, less than 70.16% of C++ online submissions for Longest Consecutive Sequence.
+Runtime: 202 ms, faster than 59.67% of C++ online submissions for Longest Consecutive Sequence.
+Memory Usage: 74.5 MB, less than 5.13% of C++ online submissions for Longest Consecutive Sequence.
+
