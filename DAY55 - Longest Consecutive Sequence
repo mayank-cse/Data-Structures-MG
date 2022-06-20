@@ -14,3 +14,43 @@ Constraints:
 0 <= nums.length <= 105
 -109 <= nums[i] <= 109
 ************************************************************
+class Solution {
+public:
+    int longestConsecutive(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        for(int i = 0 ; i<nums.size();i++){
+            cout<<nums[i];
+        }
+        int i = 0;
+        int j = 1;
+        int count = 1;
+        if(nums.size()==0){
+            return 0;
+        }
+        int maxCount = 1;
+        // 1(i) 3(j) 4
+        while(j<nums.size()){
+            if(nums[j] - nums[i] == 0 ){
+                i++;
+                j++;
+                continue;
+            }
+            if(nums[j] - nums[i] == 1 ){
+                count++;
+                i++;
+                j++;
+                continue;
+            }
+            if(count> maxCount){
+                maxCount = count;
+            }
+                count = 1;
+                i++;
+                j++;
+        }
+        if(count>maxCount){
+            maxCount=count;
+        }
+        return maxCount;
+    }
+};
