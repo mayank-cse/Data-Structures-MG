@@ -90,3 +90,35 @@ Success
 Runtime: 202 ms, faster than 59.67% of C++ online submissions for Longest Consecutive Sequence.
 Memory Usage: 74.5 MB, less than 5.13% of C++ online submissions for Longest Consecutive Sequence.
 
+************************************************************
+class Solution {
+public:
+    int freq_cal(unordered_map<int, int> &freq, int k, int v){
+        if(freq[k] > 1)return freq[k];
+        else if(freq[k] == 0)return 0;
+        
+        freq[k] += freq_cal(freq, k-1, freq[k-1]);
+        
+        return freq[k];
+    }
+    int longestConsecutive(vector<int>& nums) {
+        
+        unordered_map<int, int> freq;
+        
+        for(auto i:nums)freq[i] = 1;
+        
+        int longestVal = 0;
+        
+        for(auto i:nums){
+            int k = i,
+                v = freq[i];
+            
+            freq[k] = freq_cal(freq, k, v);
+                        
+            if(freq[k] > longestVal)longestVal = freq[k];
+        }
+        
+        return longestVal;
+        
+    }
+};
