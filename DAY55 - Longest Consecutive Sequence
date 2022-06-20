@@ -54,6 +54,35 @@ public:
         return maxCount;
     }
 };
+**********************
+class Solution {
+public:
+    int helper(unordered_set<int>& ss, int key){
+        int count = 1;
+        if(ss.find(key+1)!=ss.end()){
+            ss.erase(key);
+            count+= helper(ss, key+1);
+        }
+        return count;
+    }
+    int longestConsecutive(vector<int>& nums) {
+        if(nums.size()<=1){
+            return nums.size();
+        }
+        unordered_set<int> ss;
+        for(int i = 0;i<nums.size();i++){
+            ss.insert(nums[i]);
+        }
+        int maxCount = 1;
+        for(int i = 0 ;i<nums.size();i++){
+            if(ss.find(nums[i]-1)==ss.end() and ss.find(nums[i]+1)!=ss.end()){
+                maxCount = max(maxCount, helper(ss, nums[i]));
+            }
+      
+        }
+        return maxCount;
+    }
+};
 **************************************************************
 Success
 Runtime: 246 ms, faster than 51.88% of C++ online submissions for Longest Consecutive Sequence.
