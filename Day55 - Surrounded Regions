@@ -72,3 +72,6 @@ public:
         }
     }
 };
+Success
+Runtime: 31 ms, faster than 15.34% of C++ online submissions for Surrounded Regions.
+Memory Usage: 10.2 MB, less than 41.04% of C++ online submissions for Surrounded Regions.
