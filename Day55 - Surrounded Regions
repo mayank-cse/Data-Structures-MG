@@ -115,3 +115,6 @@ public:
                 else if (grid[i][j] == '1') grid[i][j] = 'O';
     }
 };
+Success
+Runtime: 24 ms, faster than 31.17% of C++ online submissions for Surrounded Regions.
+Memory Usage: 10 MB, less than 49.45% of C++ online submissions for Surrounded Regions.
