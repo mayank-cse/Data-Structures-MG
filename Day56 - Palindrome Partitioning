@@ -62,6 +62,10 @@ public:
         return ans;
     }
 };
+Success 
+Runtime: 290 ms, faster than 24.72% of C++ online submissions for Palindrome Partitioning.
+Memory Usage: 53.4 MB, less than 73.54% of C++ online submissions for Palindrome Partitioning.
+********************************************************************************
 Time complexity of Reverse String function - O(n/2) -> O(n)
 Time complexity of substr() function - O(n)
 
