@@ -62,4 +62,5 @@ public:
         return ans;
     }
 };
-Time complexity of Reverse String - O(n/2) -> O(n)
+Time complexity of Reverse String function - O(n/2) -> O(n)
+Time complexity of substr() function - O(n)
