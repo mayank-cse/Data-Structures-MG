@@ -64,3 +64,8 @@ public:
 };
 Time complexity of Reverse String function - O(n/2) -> O(n)
 Time complexity of substr() function - O(n)
+
+***************
+We can optimize this solution by converting the ifPalindrom() function and implementing it with two pointer approach.
++
+We can also save time by first checking and then calling substr() function -> by providing indexes to ifPalindrome() function.
