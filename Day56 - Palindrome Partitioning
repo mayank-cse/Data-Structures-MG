@@ -15,3 +15,50 @@ s contains only lowercase English letters.
 Accepted - 470,587
 Submissions - 780,220
 ********************************************************
+class Solution {
+public:
+    bool ifPalindrome(string s){
+        string u = s;
+        // temp.pop_back();
+        reverse(s.begin(),s.end());
+        if(s==u){
+            return true;
+        }
+        return false;
+    }
+    void helper(string s, int start, vector<string> &temp, vector<vector<string>> &ans){
+        if(start==s.size()){
+            ans.push_back(temp);
+            return;
+        }
+        for(int i = start; i<s.size();i++){
+            string a = s.substr(start,i-start+1);
+            if(ifPalindrome(a)){
+                temp.push_back(a);
+                helper(s,i+1,temp,ans);
+                temp.pop_back();
+            }
+        }
+    //     for(int i=start;i<s.size();i++){
+    //     string a=s.substr(start,i-start+1);   //breaking strings from index o to  1,2,3.. to check is palindrome or not.
+    //     if(isPanildrome(a)){
+    //         temp.push_back(s.substr(start,i-start+1));
+    //         helper(i+1,temp,s,st);
+    //         temp.pop_back();
+    //     }
+    // }
+        
+    }
+    vector<vector<string>> partition(string s) {
+        int n = s.size();
+        vector<string> temp;
+        vector<vector<string>> ans;
+        int count = 0;
+            //ac,0,2,NULL,NULL
+        helper(s,count,temp, ans);
+        // for(int i=0;i<temp.size();i++){
+        //     cout<<ans[0][i];
+        // }
+        return ans;
+    }
+};
