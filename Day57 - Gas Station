@@ -56,3 +56,6 @@ int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
         }
         return s;
     }
+Success
+Runtime: 155 ms, faster than 17.43% of C++ online submissions for Gas Station.
+Memory Usage: 69.3 MB, less than 99.06% of C++ online submissions for Gas Station.
