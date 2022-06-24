@@ -104,3 +104,6 @@ public:
         
     }
 };
+Success
+Runtime: 13 ms, faster than 53.41% of C++ online submissions for Copy List with Random Pointer.
+Memory Usage: 11.4 MB, less than 27.70% of C++ online submissions for Copy List with Random Pointer.
