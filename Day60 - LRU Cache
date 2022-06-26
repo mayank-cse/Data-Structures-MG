@@ -1,1 +1,57 @@
+class LRUCache {
+public:
+listdll;//doubly link list
+unordered_map<int,int>mp;//key value
+unordered_map<int,list::iterator>ladd;
+int size,csize;
+LRUCache(int c){
+csize=c;
+size=0;
+}
+int get(int key)
+{
+if(mp.find(key)==mp.end())return -1;
 
+     //if key present then it erase it from that address in dll and also delete it from  address map of dll
+     list<int>::iterator it=ladd[key];
+     dll.erase(it);
+     ladd.erase(key);
+    
+     //insert  key at  begin of dll  and address in to address map
+     dll.push_front(key);
+     ladd[key]=dll.begin();
+     
+     return mp[key];
+  }
+
+void put(int key,int val)
+  {
+      //key present  or cache full  then delete
+      
+     //delete key
+     if(mp.find(key)!=mp.end()) 
+       {
+         //if key present in linklist then it delete it from dll 
+         //and delete it's address from ladd map also size--
+          dll.erase(ladd[key]);
+          ladd.erase(key);
+          mp.erase(key);
+         size--;
+       }
+    
+     //delete last
+     if(size==csize)//if cache is full
+        {
+           int lkey=dll.back(); //last key
+          // dll.erase(ladd[lkey]);
+           dll.pop_back();
+           ladd.erase(lkey);
+           mp.erase(lkey);
+           size--;
+        } 
+      size++;
+     dll.push_front(key);
+     ladd[key]=dll.begin();
+     mp[key]=val;
+ }
+};
