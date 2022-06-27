@@ -20,6 +20,67 @@ Follow up: Can you sort the linked list in O(n logn) time and O(1) memory (i.e. 
 Accepted - 508,409
 Submissions - 965,713
 *********************************************************
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    void swap(ListNode* one, ListNode* two){
+        int temp =  two->val;
+        two->val = one->val;
+        one->val = temp;
+    }
+    ListNode* sortList(ListNode* head) {
+        int i = 0;
+        int count = 0;
+        // cout<<head->val;
+        ListNode* dummy = head;
+        while(dummy!=NULL){
+            dummy = dummy->next;
+            count++;
+        }
+        // cout<<count;
+        while(i <= count-2){//0 to 2
+            int minNode = INT_MAX;
+            ListNode* mini = NULL;
+            ListNode* temp = head;
+            int k = 0;
+            // cout<<temp->val;
+            while(k!=i){
+                temp = temp->next;
+                k++;
+            }
+            // cout<<temp->val<<endl;
+            ListNode* Ntemp;
+            Ntemp = temp ;
+            for(int j=i;j<count;j++){//0 to 3
+                cout<<Ntemp->val<<" "<<j<<" ";
+                if(minNode>Ntemp->val){
+                    minNode = Ntemp->val;
+                    mini = Ntemp;
+                    // Ntemp = Ntemp -> next;
+                    
+                }
+                Ntemp = Ntemp -> next;
+            }
+            cout<<endl;
+            // cout<<minNode<<"|"<<endl;
+            swap(temp, mini);
+            i++;
+        }
+        return head;
+    }
+};
+****************************************************************
+Optimized
+TC = O(nlogn)
 class Solution {
 public:
     ListNode* sortList(ListNode* head) {
