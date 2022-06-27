@@ -89,3 +89,7 @@ public:
         return ptr->next;
     }
 };
+*********************************************************
+Success
+Runtime: 288 ms, faster than 46.28% of C++ online submissions for Sort List.
+Memory Usage: 74.1 MB, less than 10.97% of C++ online submissions for Sort List.
