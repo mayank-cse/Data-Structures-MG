@@ -33,6 +33,8 @@ At most 3 * 104 calls will be made to push, pop, top, and getMin.
 Accepted - 1,025,599
 Submissions - 2,020,649
 **************************************************************************************
+TC - O(1) for Each Step
+S(C) - 
 class MinStack {
 public:
     stack<pair<int, int>> minStack; 
