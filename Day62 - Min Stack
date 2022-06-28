@@ -126,3 +126,7 @@ public:
  * int param_3 = obj->top();
  * int param_4 = obj->getMin();
  */
+
+Success
+Runtime: 38 ms, faster than 39.72% of C++ online submissions for Min Stack.
+Memory Usage: 16.3 MB, less than 92.39% of C++ online submissions for Min Stack.
