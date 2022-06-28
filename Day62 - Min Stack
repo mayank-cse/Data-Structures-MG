@@ -34,7 +34,7 @@ Accepted - 1,025,599
 Submissions - 2,020,649
 **************************************************************************************
 TC - O(1) for Each Step
-S(C) - 
+S(C) - O(2N)
 class MinStack {
 public:
     stack<pair<int, int>> minStack; 
