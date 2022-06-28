@@ -63,6 +63,60 @@ public:
         return minStack.top().second;
     }
 };
+//OPTIMAL
+TC = O(1)
+SC = O(n)
+class MinStack {
+public:
+    stack<long int> st;
+    long int mini;
+    MinStack() {
+        mini = INT_MAX;
+    }
+    
+    void push(int val) {
+        long int valu = (long int)val;
+        if(st.empty()){
+            st.push(valu);
+            mini = valu;
+        }
+        else{
+            if(valu<mini){
+                st.push(valu*2 - mini);
+                mini = valu;
+            }
+            else{
+                st.push(valu);
+            }
+        }
+    }
+    
+    void pop() {
+        if(st.empty()){
+            cout<<"Stack is Empty";
+        }
+        if(st.top()<mini){
+            mini = 2*mini - st.top();
+        }
+        st.pop();
+    }
+    
+    int top() {
+        if(st.empty()){
+            cout<<"Stack is Empty";
+            return 0;
+        }
+        if(st.top()<mini){
+            return mini;
+        }
+        return st.top();
+
+    }
+    
+    int getMin() {
+        return mini;
+    }
+};
 
 /**
  * Your MinStack object will be instantiated and called as such:
