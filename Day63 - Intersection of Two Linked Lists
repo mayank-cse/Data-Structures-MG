@@ -151,3 +151,6 @@ public:
         return tempA;
     }
 };
+Success
+Runtime: 55 ms, faster than 74.41% of C++ online submissions for Intersection of Two Linked Lists.
+Memory Usage: 14.6 MB, less than 31.45% of C++ online submissions for Intersection of Two Linked Lists.
