@@ -79,6 +79,7 @@ public:
 TC - O(2N)
 *********************************
 //Optimal
+//TC - O(2M)
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -128,6 +129,7 @@ public:
 };
 ********************************************
 //Optimal 2
+TC - o(2M)
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -136,6 +138,7 @@ public:
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+ 
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
