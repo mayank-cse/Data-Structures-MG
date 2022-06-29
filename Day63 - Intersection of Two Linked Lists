@@ -47,3 +47,33 @@ Follow up: Could you write a solution that runs in O(m + n) time and use only O(
 Accepted - 1,030,016
 Submissions - 1,990,457
 ***********************************************************
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        int lengthA=0, lengthB=0;
+        ListNode* tempA = headA;
+        ListNode* tempB = headB;
+        int length = min(lengthA, lengthB);
+        tempA=headA;
+        while(tempA!=NULL){
+            tempB = headB;
+            while(tempB!=NULL){
+                if(tempA == tempB){
+                    return tempA;
+                }
+                tempB = tempB->next;
+            }
+            tempA=tempA->next;
+        }
+        return NULL;
+    }
+};
+TC - O(2N)
