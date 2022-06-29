@@ -77,3 +77,52 @@ public:
     }
 };
 TC - O(2N)
+*********************************
+Optimal
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        ListNode* tempA = headA;
+        ListNode* tempB = headB;
+        int lengthA = 0;
+        int lengthB = 0;
+        if(tempA==NULL || tempB==NULL){
+            return NULL;
+        }
+        while(tempA!=NULL){
+            tempA = tempA->next;
+            lengthA++;
+        }
+        while(tempB!=NULL){
+            tempB = tempB->next;
+            lengthB++;
+        }
+        tempA = headA;
+        tempB = headB;
+        if(lengthA > lengthB){
+            while(lengthB!=lengthA){
+                tempA = tempA->next;
+                lengthB++;
+            }
+        }
+        else{
+            while(lengthB!=lengthA){
+                tempB = tempB->next;
+                lengthA++;
+            }
+        }
+        while(tempA != tempB){
+            tempA = tempA ->next;
+            tempB = tempB ->next;
+        }
+        return tempA;
+    }
+};
