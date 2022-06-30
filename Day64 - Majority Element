@@ -17,3 +17,25 @@ n == nums.length
 Follow-up: Could you solve the problem in linear time and in O(1) space?
 Accepted - 1,295,429
 Submissions - 2,047,374
+*******************************************************
+//Using HashMap
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int max = 0;
+        int ans = 0;
+        unordered_map<int,int> freq ;
+        for ( auto &it : nums ) {
+            freq[it] ++ ;
+        }
+
+        for(auto it : freq){
+            // int iterator=map_name.find(nums[i])
+            if(max<it.second){
+                max = it.second;
+                ans = it.first;
+            }
+        }
+        return ans;
+    }
+};
