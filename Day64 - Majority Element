@@ -18,24 +18,48 @@ Follow-up: Could you solve the problem in linear time and in O(1) space?
 Accepted - 1,295,429
 Submissions - 2,047,374
 *******************************************************
-//Using HashMap
-class Solution {
-public:
-    int majorityElement(vector<int>& nums) {
-        int max = 0;
-        int ans = 0;
+1.Using unordered map (hashing)
+
+        int n = nums.size() ;
+        int m = n/2 ;
+        
         unordered_map<int,int> freq ;
         for ( auto &it : nums ) {
             freq[it] ++ ;
         }
-
-        for(auto it : freq){
-            // int iterator=map_name.find(nums[i])
-            if(max<it.second){
-                max = it.second;
-                ans = it.first;
-            }
+        
+        int ans = 0 ;
+        for ( auto &it : freq ) {
+            if( it.second > m ) ans = it.first ;
         }
-        return ans;
+        
+        return ans ;
+*********
+Using sorting ( 2 - lines )
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        sort ( nums.begin() , nums.end() ) ;
+        return nums[ nums.size() / 2 ];
+    }
+};
+**********
+//O(n) using Boyer-Moore Majority Vote Algorithm
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        
+        int major=nums[0], count = 1;
+        for(int i=1; i<nums.size();i++){
+            if(count==0){
+                count++;
+                major=nums[i];
+            }else if(major==nums[i]){
+                count++;
+            }else count--;
+            
+        }
+        return major;
+
     }
 };
