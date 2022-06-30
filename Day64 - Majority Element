@@ -63,3 +63,7 @@ public:
 
     }
 };
+***********************************
+Success
+Runtime: 29 ms, faster than 51.93% of C++ online submissions for Majority Element.
+Memory Usage: 19.7 MB, less than 13.04% of C++ online submissions for Majority Element.
