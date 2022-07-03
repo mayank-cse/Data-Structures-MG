@@ -57,3 +57,7 @@ public:
         return st.top();
     }
 };
+*************************************
+Success
+Runtime: 14 ms, faster than 67.05% of C++ online submissions for Evaluate Reverse Polish Notation.
+Memory Usage: 12 MB, less than 61.18% of C++ online submissions for Evaluate Reverse Polish Notation.
