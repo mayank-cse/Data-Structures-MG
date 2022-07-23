@@ -25,13 +25,9 @@ The input must be a binary string of length 32
 
 Follow up: If this function is called many times, how would you optimize it?
 
-Accepted
-505,478
-Submissions
-1,002,424
+Accepted - 505,478
+Submissions - 1,002,424
 ********************************************************
-
-
 class Solution {
 public:
 uint32_t reverseBits(uint32_t n) {
@@ -45,5 +41,8 @@ return ans;
 }
 };
 
-
 https://www.youtube.com/watch?v=TC7nCh1MZM8
+**********************************************************
+Success
+Runtime: 4 ms, faster than 44.56% of C++ online submissions for Reverse Bits.
+Memory Usage: 5.9 MB, less than 81.00% of C++ online submissions for Reverse Bits.
