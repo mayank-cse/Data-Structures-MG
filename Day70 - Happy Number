@@ -25,3 +25,39 @@ Constraints:
 Accepted - 895,772
 Submissions - 1,662,488
 ************************************************
+class Solution {
+public:
+
+    int checkSum(int n, int &flag){
+        int sum = 0;
+        while(n!=0){
+            int d = n%10;
+            n = n/10;
+            sum += pow(d,2);
+        }
+        cout<<sum<<endl;
+
+        if(sum == 1){
+            flag = 1;
+        }
+        if(sum == 89){
+            flag =2;
+        }
+        return sum;
+    }
+    bool isHappy(int n) {
+        //bool helper(int n, );
+        int flag = 0;
+        int sum = checkSum(n, flag);
+        if(flag==1){
+            return true;
+        }
+        else if(flag==2){
+            return false;
+        }
+        else{
+            return isHappy(sum);
+        }
+        return false;
+    }
+};
