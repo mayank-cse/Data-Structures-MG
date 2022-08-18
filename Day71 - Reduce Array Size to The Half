@@ -2,7 +2,6 @@ You are given an integer array arr. You can choose a set of integers and remove 
 Return the minimum size of the set so that at least half of the integers of the array are removed.
 
 Example 1:
-
 Input: arr = [3,3,3,3,5,5,5,2,2,7]
 Output: 2
 Explanation: Choosing {3,7} will make the new array [5,5,5,2,2] which has size 5 (i.e equal to half of the size of the old array).
@@ -49,3 +48,7 @@ public:
         return 0;
     }
 };
+**************************************
+Success
+Runtime: 208 ms, faster than 93.51% of C++ online submissions for Reduce Array Size to The Half.
+Memory Usage: 78.3 MB, less than 63.73% of C++ online submissions for Reduce Array Size to The Half.
