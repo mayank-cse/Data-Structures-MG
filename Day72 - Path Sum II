@@ -66,5 +66,5 @@ public:
 };
 ********************************************
 Success
-Runtime: 21 ms, faster than 51.23% of C++ online submissions for Path Sum II.
-Memory Usage: 19.9 MB, less than 81.15% of C++ online submissions for Path Sum II.
+Runtime: 12 ms, faster than 81.57% of C++ online submissions for Path Sum II.
+Memory Usage: 20 MB, less than 60.91% of C++ online submissions for Path Sum II.
